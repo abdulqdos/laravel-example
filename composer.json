@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "abdulqdos/laravel-example",
+    "description": "This is my First laravel pkg",
     "keywords": [
-        ":vendor_name",
+        "abdulqdos",
         "laravel",
-        ":package_slug"
+        "laravel-example"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/abdulqdos/laravel-example",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Abdulqdos Alabinie",
+            "email": "abdulqdosalabinie@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Abdulqdos\\LaravelExample\\": "src/",
+            "Abdulqdos\\LaravelExample\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Abdulqdos\\LaravelExample\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Abdulqdos\\LaravelExample\\LaravelExampleServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelExample": "Abdulqdos\\LaravelExample\\Facades\\LaravelExample"
             }
         }
     },
