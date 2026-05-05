@@ -10,5 +10,5 @@ it('can create a model', function () {
 it('can create a uppercase of name', function () {
     $myModel = MyModel::Factory()->create(['name' => 'ali']);
 
-    expect($myModel->getUpperCaseName())->toBe('ALI'); ;
+    expect($myModel->getUpperCaseName())->toBe('ALI');
 });

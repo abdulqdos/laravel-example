@@ -1,7 +1,7 @@
 <?php
 
 use Abdulqdos\LaravelExample\Commands\LaravelExampleCommand;
-use Illuminate\Console\Command;
+
 use function Pest\Laravel\artisan;
 
 it('can test Command', function () {
@@ -17,4 +17,3 @@ it('can output the another value', function () {
         ->expectsOutput(config('output'))
         ->assertExitCode(0);
 });
-

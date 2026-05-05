@@ -15,6 +15,7 @@ class LaravelExampleCommand extends Command
         $text = config('example.command_output');
         $this->comment('All done');
         $this->comment($text);
+
         return self::SUCCESS;
     }
 }

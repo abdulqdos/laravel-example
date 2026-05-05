@@ -5,11 +5,14 @@ namespace Abdulqdos\LaravelExample\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class MyModel extends Model {
-    use HasFactory ;
-    public $guarded  = [];
+class MyModel extends Model
+{
+    use HasFactory;
 
-    public function getUpperCaseName(): string {
+    public $guarded = [];
+
+    public function getUpperCaseName(): string
+    {
         return strtoupper($this->name);
     }
 }
