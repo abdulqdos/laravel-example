@@ -28,16 +28,15 @@ class LaravelExampleServiceProvider extends PackageServiceProvider
     public function packageRegistered()
     {
 
-
-        Route::macro('example' , function (string $baseurl) {
+        Route::macro('example', function (string $baseurl) {
             Route::prefix($baseurl)->group(function () {
                 Route::get('/', [MyController::class, 'index'])->name('my-route');
             });
         });
 
         // in the project
-//        Route::example('my-route'); // /example
-//        Route::example('custom-route'); // /custom-route
+        //        Route::example('my-route'); // /example
+        //        Route::example('custom-route'); // /custom-route
 
     }
 }

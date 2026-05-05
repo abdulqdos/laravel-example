@@ -2,7 +2,7 @@
 
 namespace Abdulqdos\LaravelExample\Http\Controllers;
 
-Class MyController
+class MyController
 {
     public function index()
     {
